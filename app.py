@@ -250,12 +250,12 @@ with tab1:
 
                 with col1:
                     #set feedback buttons
-                    if st.button("Yes", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
-                        feedback_state = update_feedback(datetime.now(), question, "Yes")
+                    if st.button("0 (This was not helpful at all)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                        feedback_state = update_feedback(datetime.now(), question, "0")
 
                 with col2:
-                    if st.button("No", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
-                        feedback_state = update_feedback(datetime.now(), question, "No")
+                    if st.button("1 (this was mildly helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                        feedback_state = update_feedback(datetime.now(), question, "1")
 
                 #say thank you if the feedback is given
                 if feedback_state:
