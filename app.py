@@ -202,6 +202,20 @@ about_div = """
 #set the container
 st.markdown(about_div, unsafe_allow_html = True)
 
+#set description
+examples_div = """
+    <div class="Examples">
+        <h3>Example questions to help you get started!</h3>
+        <ul>
+            <li>Emily has 3 pizzas. John has 4 pizzas.</li>
+            <li>You can copy paste any mathematical question and get similar question/questions.</li>
+            <li>Can use them to enhance your skills.</li>
+        </ul>
+    </div>
+"""
+#set the container
+st.markdown(examples_div, unsafe_allow_html = True)
+
 #create tabs
 tab1, tab2 = st.tabs(["Questions 🧮", "Dashboard 📊"])
 
