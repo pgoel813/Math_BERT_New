@@ -257,20 +257,36 @@ with tab1:
             with st.sidebar:
                 st.title("Feedback")
                 st.write("Your feedback is much appreciated for improvemment of the web application.")
-                st.subheader("Are You Satisfied with the Questions You Got?")
+                st.subheader("How helpful was this AI Generated Response towards helping you solve this probelm?")
 
                 #create columns
-                col1, col2 = st.columns(2)
+                col1, col2, col3, col4, col5, col6, col7 = st.columns(7)
 
                 with col1:
                     #set feedback buttons
-                    if st.button("0 (This was not helpful at all)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                    if st.button("0 (This was actively harmful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "0")
 
                 with col2:
-                    if st.button("1 (this was mildly helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                    if st.button("1 (This was very harmful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "1")
 
+               with col3:
+                    if st.button("2 (This was somewhat harmful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                        feedback_state = update_feedback(datetime.now(), question, "2")
+               with col4:
+                    if st.button("3 (This was unlikely to help, but unlikely to hurt)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                        feedback_state = update_feedback(datetime.now(), question, "3")       
+               with col5:
+                    if st.button("4 (This was somewhat helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                        feedback_state = update_feedback(datetime.now(), question, "4")
+              with col6:
+                    if st.button("5 (This was very helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                        feedback_state = update_feedback(datetime.now(), question, "5")
+              with col7:
+                    if st.button("6 (This was extremely helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                        feedback_state = update_feedback(datetime.now(), question, "6")
+ 
                 #say thank you if the feedback is given
                 if feedback_state:
                     st.header("Thank You For Your Feedback!")
