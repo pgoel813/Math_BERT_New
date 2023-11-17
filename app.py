@@ -207,9 +207,9 @@ examples_div = """
     <div class="Examples">
         <h3>Example questions to help you get started!</h3>
         <ul>
-            <li>Emily has 3 pizzas. John has 4 pizzas.</li>
+            <li>How many millimeters are in 5L?</li>
+            <li>What is 30 more than a quarter of 40?</li>
             <li>You can copy paste any mathematical question and get similar question/questions.</li>
-            <li>Can use them to enhance your skills.</li>
         </ul>
     </div>
 """
@@ -264,31 +264,31 @@ with tab1:
 
                 with col1:
                     #set feedback buttons
-                    if st.button("0 (This was actively harmful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                    if st.button("0 (Actively Harmful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "0")
 
                 with col2:
-                    if st.button("1 (This was very harmful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                    if st.button("1 (Very Harmful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "1")
 
                 with col3:
-                    if st.button("2 (This was somewhat harmful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                    if st.button("2 (Somewhat Harmful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "2")
                       
                 with col4:
-                    if st.button("3 (This was unlikely to help, but unlikely to hurt)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                    if st.button("3 (Unlikely to help,but unlikely to hurt)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "3")     
                       
                 with col5:
-                    if st.button("4 (This was somewhat helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                    if st.button("4 (Somewhat Helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "4")
                       
                 with col6:
-                    if st.button("5 (This was very helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                    if st.button("5 (Very Helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "5")
                       
                 with col7:
-                    if st.button("6 (This was extremely helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
+                    if st.button("6 (Extremely Helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "6")
  
                 #say thank you if the feedback is given
