@@ -271,23 +271,23 @@ with tab1:
                     if st.button("1 (This was very harmful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "1")
 
-               with col3:
+                with col3:
                     if st.button("2 (This was somewhat harmful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "2")
                       
-               with col4:
+                with col4:
                     if st.button("3 (This was unlikely to help, but unlikely to hurt)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "3")     
                       
-               with col5:
+                with col5:
                     if st.button("4 (This was somewhat helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "4")
                       
-              with col6:
+                with col6:
                     if st.button("5 (This was very helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "5")
                       
-              with col7:
+                with col7:
                     if st.button("6 (This was extremely helpful)", type = "primary", on_click=disabled, disabled=st.session_state.disabled, use_container_width = True):
                         feedback_state = update_feedback(datetime.now(), question, "6")
  
