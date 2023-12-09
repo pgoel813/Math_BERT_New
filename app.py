@@ -207,9 +207,11 @@ examples_div = """
     <div class="Examples">
         <h3>Example questions to help you get started!</h3>
         <ul>
-            <li>How many millimeters are in 5L?</li>
+            <li>A box has 5 dozen bottles of apple juice and half a dozen more bottle of orange juice than apple juice. How many bottles are in the box?</li>
+            <li>Tim can read 10 pages of a book in 30 minutes.  How many hours will it take him to read 120 pages?</li>
             <li>What is 30 more than a quarter of 40?</li>
-            <li>You can copy paste any mathematical question and get similar question/questions.</li>
+            <li>The price of a home is $120 per square foot. The house is 3000 square feet and the shed is 1000 square feet. How much is this property?<li>
+            <li>If 40 out of 100 people like basketball and out of those that like it, 30% play it, how many people would you expect play basketball out of a group of 300 people?<li?
         </ul>
     </div>
 """
