@@ -286,7 +286,8 @@ with tab1:
               # Display a thank you message if feedback is given
               if feedback_state:
                   st.header("Thank You For Your Feedback!")
-  with tab2:
+  
+with tab2:
     st.header("Feedback Analysis")
     st.subheader("Feedback Data")
 
